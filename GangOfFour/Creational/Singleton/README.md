@@ -4,6 +4,8 @@
 
 > _[Singleton] is useful when exactly one object is needed to coordinate actions across the system._ - Wikipedia
 
+> _I'm in favor of dropping Singleton. Its use is almost always a design smell._ - Erich Gamma, GoF, 2009
+
 NOTE:
 
 Nowadays it is considered an anti-pattern because it:
