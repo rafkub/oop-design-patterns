@@ -1,6 +1,6 @@
 # Simple Factory
 
-* encapsulates object creation
+* a class that encapsulates object creation
 
 Sometimes referred to as a programming idiom rather than a full-fledged design pattern.
 
