@@ -6,7 +6,7 @@ namespace OOP\DesignPatterns\GangOfFour\Creational\FactoryMethod;
 
 abstract class Car // "Product"
 {
-    function polishUp(): void
+    public function polishUp(): void
     {
         echo 'Polishing up bodywork, rims and shine-spraying tires...' . PHP_EOL;
     }
@@ -51,7 +51,7 @@ abstract class CarDealership
     }
 }
 
-//"Concrete Creators":
+// "Concrete Creators":
 class MercedesDealership extends CarDealership
 {
     public function import(): Car // factory method implementation
