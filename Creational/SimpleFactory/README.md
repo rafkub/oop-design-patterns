@@ -2,9 +2,10 @@
 
 * a class that encapsulates object creation
 
+## NOTE:
 Sometimes referred to as a programming idiom rather than a full-fledged design pattern.
 
-## Static Factory variant
+# Static Factory variant
 * define create() method in Simple Factory as static
 
 ### Benefits

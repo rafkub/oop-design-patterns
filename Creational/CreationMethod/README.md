@@ -11,8 +11,8 @@
 * requires instantiation using a constructor first
 
 ## Gotchas
-* Do not confuse with Factory Method.
+* Do not confuse with [Factory Method](../../GangOfFour/Creational/FactoryMethod).
   Every *result* of the Factory Method pattern is a Creation Method but not the other way round
   
 ## See also:
-Static Creation Method variant
+[Static Creation Method variant](../StaticCreationMethod)

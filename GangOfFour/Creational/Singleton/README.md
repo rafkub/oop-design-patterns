@@ -10,7 +10,7 @@ NOTE:
 
 Nowadays it is considered an anti-pattern because it:
 * violates the 
-[Single Responsibility Principle](https://github.com/rafkub/oop-principles/tree/main/SOLID/SingleResponsibility)
+[Single Responsibility Principle](https://github.com/rafkub/oop-principles/SOLID/SingleResponsibility)
   - a class has its main, business responsibility and a new responsibility of restricting its instantiation
 * promotes tight coupling
   - the reference to the singleton cannot be changed according to the environment
@@ -21,4 +21,3 @@ Nowadays it is considered an anti-pattern because it:
   - makes TDD virtually impossible
 * complicates multithreading
   - race condition when checking if the singleton has been instantiated
-

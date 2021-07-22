@@ -7,3 +7,4 @@
 
 ## NOTE:
 As of PHP 8.0, the null safe operator is often simpler and better alternative to the Null Object design pattern.
+(see [without-null-object.php](without-null-object.php))

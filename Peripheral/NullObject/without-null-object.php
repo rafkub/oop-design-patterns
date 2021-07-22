@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OOP\DesignPatterns\WithoutNullObject;
+namespace OOP\DesignPatterns\Peripheral\WithoutNullObject;
 
 class Dog
 {

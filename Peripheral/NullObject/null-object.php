@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OOP\DesignPatterns\NullObject;
+namespace OOP\DesignPatterns\Peripheral\NullObject;
 
 interface Animal
 {

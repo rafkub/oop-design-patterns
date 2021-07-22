@@ -1,5 +1,5 @@
-# oop-design-patterns
-Object-oriented design patterns (Gang of Four [GoF], Dependency Injection, Null Object etc.)
+# OOP Design Patterns
+Object-oriented design patterns (Gang of Four [GoF], Dependency Injection, Active Record, Data Mapper, Null Object etc.)
 
 > _Designing object-oriented software is hard, designing reusable object-oriented software is even harder._ - Design 
 > Patterns: Elements of Reusable Object-Oriented Software, GoF, 1994

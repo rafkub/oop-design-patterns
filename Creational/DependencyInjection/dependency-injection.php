@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OOP\DesignPatterns\DependencyInjection;
+namespace OOP\DesignPatterns\Creational\DependencyInjection;
 
 class Car
 {
