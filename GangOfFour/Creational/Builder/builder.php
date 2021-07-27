@@ -22,12 +22,16 @@ class StandardSQLQueryBuilder implements SQLQueryBuilder
     protected array $where = [];
     protected string $limit = '';
 
+    // SECURITY WARNING!
+    // This simple implementation is susceptible to SQL injection attack and for demonstration purposes only:
     public function select(string $table, array $fields): static
     {
         $this->select = 'SELECT ' . implode(', ', $fields) . " FROM $table";
         return $this;
     }
 
+    // SECURITY WARNING!
+    // This simple implementation is susceptible to SQL injection attack and for demonstration purposes only:
     public function where(string $field, string|int|float $value, string $operator = '='): static
     {
         $value = is_string($value) ? "'$value'" : $value;
