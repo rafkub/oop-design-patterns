@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace OOP\DesignPatterns\GangOfFour\Structural\Bridge;
 
 // "Abstraction"
-class BasicRemote
+abstract class Remote
 {
     public function __construct(private Device $device) {} // has an "Implementor"
 
@@ -15,24 +15,34 @@ class BasicRemote
     }
 
     // Methods are implemented in terms of the implementation:
-    public function getVolume(): int
+    protected function getVolume(): int
     {
         return $this->device->getVolume(); // uses "Implementor"
     }
 
-    public function setVolume(int $volume): void
+    protected function setVolume(int $volume): void // not available in a public interface of the subclasses
     {
         $this->device->setVolume(volume: $volume);
     }
 }
 
-// "Refined Abstraction"
-class UserFriendlyRemote extends BasicRemote
+// "Refined Abstractions":
+class BasicRemote extends Remote
+{
+    // Method is implemented in terms of the abstraction, not implementation
+    public function setVolume(int $volume): void // changing visibility level
+    {
+        parent::setVolume(volume: $volume); // uses only "Abstraction", not "Implementor"
+    }
+}
+
+class UserFriendlyRemote extends Remote
 {
     // Methods are implemented in terms of the abstraction, not implementation:
     public function volumeUp(): void
     {
-        $currentVolume = $this->getVolume(); // uses only "Abstraction", not "Implementor"
+        // Uses only "Abstraction", not "Implementor":
+        $currentVolume = $this->getVolume();
         $this->setVolume(volume: $currentVolume + 10);
     }
 
